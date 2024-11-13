@@ -1,4 +1,7 @@
- {
+
+<style>
+
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -112,3 +115,4 @@ a:focus, a:hover {
         font-size: 1.2rem;
     }
 }
+</style>
