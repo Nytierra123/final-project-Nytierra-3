@@ -89,19 +89,19 @@ main img {
     max-width: 100%;
 }
 
-/* Footer Styling */
+
 footer p {
     margin: 0;
     padding: 10px;
     font-size: 1rem;
 }
 
-/* Accessibility Enhancements */
+
 a:focus, a:hover {
-    outline: 2px solid #ff6600; /* Adding a focus state to enhance accessibility */
+    outline: 2px solid #ff6600; 
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
@@ -115,4 +115,12 @@ a:focus, a:hover {
         font-size: 1.2rem;
     }
 }
-</style>
+
+p {
+    text-align: center;   
+    font-family: 'Roboto', sans-serif;  
+    font-size: 20px; 
+    color: #333;      
+    line-height: 1.6; 
+}
+    </style>
