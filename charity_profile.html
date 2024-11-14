@@ -1,122 +1,133 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="HelpHub - Find and support charities">
     <title>HelpHub - Charity Profile</title>
-     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">  
-<style>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* General body styling for centering content */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            text-align: center; /* Ensure text is centered */
+        }
 
-    ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #333;
-  text-align: center;
-}
+        /* Navigation styling */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            top: 0;
+        }
 
-li {
-  display: inline-block;
-}
+        li {
+            display: inline-block;
+        }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
- font-size: 30px;
-}
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 30px;
+        }
 
-li a:hover {
-  background-color: #111;
-}
-      .volunteer-btn {
+        li a:hover {
+            background-color: #111;
+        }
+
+        /* Centering the images */
+        img {
+            max-width: 100%;  /* Ensure the image fits within the container */
+            height: auto;     /* Maintain aspect ratio */
+            margin: 20px 0;   /* Space around the image */
+        }
+
+        /* Volunteer button styling */
+        .volunteer-btn {
             padding: 15px 30px;
-            font-size: 20px;
+            font-size: 20px;
             background-color: #4CAF50;
             color: white;
             border: none;
             cursor: pointer;
-            margin: 20px auto:
-            display: block:
-            width: 250px;
-            border-radius: 5px;
- 
+            margin: 20px auto;
+            display: block;
+            width: 250px;
+            border-radius: 5px;
         }
 
         .volunteer-btn:hover {
             background-color: #45a049;
         }
 
-        img {
-            display: block;
-            margin: 0 auto 20px;
+        /* Paragraph styling */
+        p {
+            font-size: 20px;
+            color: #333;
+            line-height: 1.6;
         }
-p {
-    text-align: center;   
-    font-family: 'Roboto', sans-serif;  
-    font-size: 30px; 
-    color: #333;      
-    line-height: 1.6; 
-}
- h1 {
-  text-align: center;
-  margin: 20px 0;
- }
-.image-wrapper {
- text-align:center;
- }
-img {
- max-width: 100%;
-height: auto;
- margin: 20px 0;
-}
- body { display: flex; 
-       justify-content: center;
-       align-items: center; 
-       flex-direction: column; 
-        height: 100vh; 
-        margin: 0; 
-       font-family: 'Roboto', sans-serif; 
-        text-align: center; 
-      }
+
+        h1, h3 {
+            color: #333;
+        }
+
+        h1 {
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
 
+    <!-- Navigation bar -->
     <ul>
         <li><a href="index.html">Homepage</a></li>
         <li><a href="charities.html">Charities</a></li>
         <li><a href="charity_profile.html">Charity Profile</a></li>
     </ul>
-    <div>
-    <img src="https://cdn1.vectorstock.com/i/1000x1000/00/45/charity-logo-design-template-vector-21470045.jpg" width="300" height="200" alt="HelpHub Charity Logo">
-    </div>
-    <h1 style="color: red;">Learn more about your charity here</h1>
 
-    <h1 style="color: green;">St. Jude Children's Research Hospital</h1>
-    <h3>Why this charity?</h3>
-    <p>Help advance research and treatment for childhood cancer. Together, our contributions create powerful change. Just one dollar a day could save a child's life.</p>
-    <img src="https://kidsthatdogood.com/wp-content/uploads/2017/04/St.Judes_.png" width="300" height="200" alt="St. Jude's Hospital">
-    <p><a href="https://www.stjude.org/promotion/impact-giving-pm.html?sc_dcm=58700006946881469&sc_cid=kwp&sc_cat=b&&&&&ds_rl=1285465&ds_rl=1291300&msclkid=9b2dd5603b151a7c2e18b2514a6dca62&utm_source=bing&utm_medium=cpc&utm_campaign=M%20-%20Brand%20BMM%20EL&utm_term=st%20jude%20children%20hospital&utm_content=PM_PR_Dig_Srch_PM_AO_US_Nat_MS_M-Ads_LF_-_-_-_SERP-BMM_Srch-B_-_-_-_Core_-_EL_-_-_Srch&gclid=9b2dd5603b151a7c2e18b2514a6dca62&gclsrc=3p.ds">Visit St. Jude's website!</a></p>
-    <button class="volunteer-btn">Volunteer Here</button>
+    <!-- Main content area -->
+    <div>
+        <h1 style="color: red;">Learn more about your charity here</h1>
 
-    <h1 style="color: green;">American Red Cross</h1>
-    <h3>Why this charity?</h3>
-    <p>Donating blood or volunteering helps give back to those affected by natural disasters or emergencies.</p>
-    <img src="https://th.bing.com/th/id/R.f2ef1fdda5718b156d192c0d82e343d7?rik=Gnsmd%2fLr%2fUgKEg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2famerican-red-cross-logo-png--900.jpg&ehk=chzIbwa1Uvik0JLgmOmlAsGw1l9Yqkm2Xcz5Zzh0uF4%3d&risl=&pid=ImgRaw&r=0" width="300" height="200" alt="American Red Cross">
-    <p><a href="https://www.redcrossblood.org/give.html/find-drive?cid=brand&med=cpc&source=bing&scode=RSG00000E017&gclsrc=3p.ds">Visit the Red Cross website</a></p>
-    <button class="volunteer-btn">Volunteer Here</button>
+        <!-- St. Jude's Charity Profile -->
+        <h1 style="color: green;">St. Jude Children's Research Hospital</h1>
+        <h3>Why this charity?</h3>
+        <p>Help advance research and treatment for childhood cancer. Together, our contributions create powerful change. Just one dollar a day could save a child's life.</p>
+        <img src="https://kidsthatdogood.com/wp-content/uploads/2017/04/St.Judes_.png" width="300" height="200" alt="St. Jude's Hospital">
+        <p><a href="https://www.stjude.org/promotion/impact-giving-pm.html?sc_dcm=58700006946881469&sc_cid=kwp&sc_cat=b&&&&&ds_rl=1285465&ds_rl=1291300&msclkid=9b2dd5603b151a7c2e18b2514a6dca62&utm_source=bing&utm_medium=cpc&utm_campaign=M%20-%20Brand%20BMM%20EL&utm_term=st%20jude%20children%20hospital&utm_content=PM_PR_Dig_Srch_PM_AO_US_Nat_MS_M-Ads_LF_-_-_-_SERP-BMM_Srch-B_-_-_-_Core_-_EL_-_-_Srch&gclid=9b2dd5603b151a7c2e18b2514a6dca62&gclsrc=3p.ds">Visit St. Jude's website!</a></p>
+        <button class="volunteer-btn">Volunteer Here</button>
 
-    <h1 style="color: green;">The Salvation Army</h1>
-    <h3>Why this charity?</h3>
-    <p>The Salvation Army operates rehabilitation facilities across the country, providing help and hope to individuals facing various challenges, including substance abuse. Their residential programs offer spiritual, emotional, and social assistance to help participants live healthy, fulfilling lives.</p>
-    <img src="https://th.bing.com/th/id/OIP.aK-Q7OjBRx4frcBp0I794gHaHa?rs=1&pid=ImgDetMain" width="300" height="200" alt="The Salvation Army">
-    <p><a href="https://www.salvationarmyusa.org/usn/">Visit The Salvation Army website</a></p>
-    <button class="volunteer-btn">Volunteer Here</button>
+        <!-- American Red Cross Charity Profile -->
+        <h1 style="color: green;">American Red Cross</h1>
+        <h3>Why this charity?</h3>
+        <p>Donating blood or volunteering helps give back to those affected by natural disasters or emergencies.</p>
+        <img src="https://th.bing.com/th/id/R.f2ef1fdda5718b156d192c0d82e343d7?rik=Gnsmd%2fLr%2fUgKEg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2famerican-red-cross-logo-png--900.jpg&ehk=chzIbwa1Uvik0JLgmOmlAsGw1l9Yqkm2Xcz5Zzh0uF4%3d&risl=&pid=ImgRaw&r=0" width="300" height="200" alt="American Red Cross">
+        <p><a href="https://www.redcrossblood.org/give.html/find-drive?cid=brand&med=cpc&source=bing&scode=RSG00000E017&gclsrc=3p.ds">Visit the Red Cross website</a></p>
+        <button class="volunteer-btn">Volunteer Here</button>
+
+        <!-- The Salvation Army Charity Profile -->
+        <h1 style="color: green;">The Salvation Army</h1>
+        <h3>Why this charity?</h3>
+        <p>The Salvation Army operates rehabilitation facilities across the country, providing help and hope to individuals facing various challenges, including substance abuse. Their residential programs offer spiritual, emotional, and social assistance to help participants live healthy, fulfilling lives.</p>
+        <img src="https://th.bing.com/th/id/OIP.aK-Q7OjBRx4frcBp0I794gHaHa?rs=1&pid=ImgDetMain" width="300" height="200" alt="The Salvation Army">
+        <p><a href="https://www.salvationarmyusa.org/usn/">Visit The Salvation Army website</a></p>
+        <button class="volunteer-btn">Volunteer Here</button>
+    </div>
 
 </body>
-</html>
+</html> 
